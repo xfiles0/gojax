@@ -26,9 +26,9 @@ $header[] = 'Content-Type:application/json; charset=UTF-8';
 $header[] = 'Host:api.gojekapi.com'; 
 $header[] = 'Connection:Keep-Alive';
 $header[] = 'User-Agent:okhttp/3.12.1';
-echo "REGISTER & SET-PIN & CLAIM VOUCHER \n";
+echo "REGISTER YA UPIK & SET-PIN & CLAIM VOUCHER \n";
 ############# REGISTER #############
-echo "[+] Input Nomer = ";
+echo "[+] Input Nomer Lu upik = ";
 $nomer=trim(fgets(STDIN));
 $gennama=curl('https://randomuser.me/api/?inc=name&nat=us');
 $nama=get_between($gennama, '"first":"', '"').' '.get_between($gennama, '"last":"', '"');
