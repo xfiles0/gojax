@@ -28,7 +28,7 @@ $header[] = 'Connection:Keep-Alive';
 $header[] = 'User-Agent:okhttp/3.12.1';
 echo "REGISTER YA UPIK & SET-PIN & CLAIM VOUCHER \n";
 ############# REGISTER #############
-echo "[+] Input Nomer Lu upik = ";
+echo "[+] masukin no Lu  = ";
 $nomer=trim(fgets(STDIN));
 $gennama=curl('https://randomuser.me/api/?inc=name&nat=us');
 $nama=get_between($gennama, '"first":"', '"').' '.get_between($gennama, '"last":"', '"');
@@ -52,13 +52,13 @@ echo "[+] Input OTP Set-Pin = ";
 $otp_pin=trim(fgets(STDIN));
 $header[] = "otp: $otp_pin"; 
 $verif_setpin=curl('https://api.gojekapi.com/wallet/pin','{"pin":"'.$pin.'"}',$header,$proxy);
-echo "[+] Process Redeem GOFOODBOBA07 = ";
+echo "[+] Process Redeem Gofoodsantai19 = ";
 echo "[+] Process Redeem COBAINGOJEK = ";
-$GOFOODBOBA07=curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments','{"promo_code":"GOFOODBOBA07"}',$header,$proxy);
+$Gofoodsantai19=curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments','{"promo_code":"Gofoodsantai19"}',$header,$proxy);
 if (get_between($GOFOODBOBA07,'"success":',',')=="true"){
 $COBAINGOJEK=curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments','{"promo_code":"COBAINGOJEK"}',$header,$proxy);
 if (get_between($COBAINGOJEK,'"success":',',')=="true"){
-	echo "Ye makan gratis 20k+10k bareng upik \n";	
+	echo "zzzz wrong \n";	
 	$live = "token-accounts.txt";
 	$fopen1 = fopen($live, "a+");
 	$fwrite1 = fwrite($fopen1, "TOKEN => ".$token." \n NOMOR => ".$nomer." \n");
