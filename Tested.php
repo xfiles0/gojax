@@ -9,9 +9,7 @@ include ("curl.php");
 echo "\n";
 echo "\e[94m          Voucher Claim Gojek           \n";
 echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
-echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
-echo "\e[93m SCRIPT : Kumpulanremaja.com\n";
-echo "\e[93m Github: 4kumpulanremaja \n";
+echo "\e[93m SCRIPT GOJEK AUTO REGISTER
 echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
